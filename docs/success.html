@@ -42,26 +42,8 @@
       </div>
     </div>
 
-    <div class="step-card" id="sessionInfo" style="display:none;max-width: 760px; margin: 0 auto;">
-      <h2 class="fitline">Session ID</h2>
-      <p class="muted" id="sessionId">—</p>
-    </div>
   </div>
 
-  <script>
-    (function () {
-      const params = new URLSearchParams(window.location.search || '');
-      const sid = params.get('session_id') || '';
-      if (sid) {
-        const box = document.getElementById('sessionInfo');
-        const slot = document.getElementById('sessionId');
-        if (box && slot) {
-          slot.textContent = sid;
-          box.style.display = 'block';
-        }
-      }
-    })();
-  </script>
 </body>
 
 </html>

@@ -30,7 +30,6 @@
   stripe-webhook.js      # writes paid orders to Google Sheets (Orders + OrderLines)
   get-prices.js          # fetches Stripe price amounts for client
   shipping-config.js     # serves shipping.json
-  upload-to-drive.js     # legacy multipart → Drive (not used for art now)
   config/prices.js       # Stripe price IDs (garments + DTF tiers)
   config/shipping.json   # UPS Ground count-based table
 netlify.toml             # publish/docs + functions path
@@ -105,7 +104,6 @@ curl -s -X POST https://designer.gorillaprintshop.com/.netlify/functions/create-
 - Time-driven trigger avoids duplicate emails/folders.
 
 ## Legacy / Cleanup
-- `upload-to-drive.js` retained for now; primary upload path is GCS signed URLs.  
 - “Pending/quote” flows and `create-order.js` remain retired; Checkout + paid webhook is live.  
 - This doc supersedes older architecture guides; keep older files only for historical reference.
 
