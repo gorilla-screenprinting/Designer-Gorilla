@@ -15,3 +15,7 @@ Thumbs.db
 
 # Local env vars
 .env
+
+
+
+deno.lock
